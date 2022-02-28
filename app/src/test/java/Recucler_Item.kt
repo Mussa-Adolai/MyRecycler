@@ -1,1 +1,0 @@
-class Recucler_Item (val name: String, val hint:String,val img:Int)
