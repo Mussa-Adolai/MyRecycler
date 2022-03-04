@@ -3,6 +3,7 @@ package com.example.kt9
 
 import android.os.Bundle
 import android.widget.FrameLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
@@ -37,11 +38,14 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId){
                 R.id.home -> {
+
                     chooseFragment(PersonFragment(),"HOME")
+
                 }
 
                 R.id.profile->{
                     chooseFragment(RecyclerFragment(),"PROFILE")
+                    Toast.makeText(this,"recyclerFragment", Toast.LENGTH_SHORT)
                 }
             }
             true
