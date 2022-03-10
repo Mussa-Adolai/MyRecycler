@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.profile->{
                     chooseFragment(RecyclerFragment(),"PROFILE")
-                    Toast.makeText(this,"recyclerFragment", Toast.LENGTH_SHORT)
+                    Toast.makeText(this,"recyclerFragment", Toast.LENGTH_SHORT).show()
                 }
             }
             true
